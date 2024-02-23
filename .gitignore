@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CarRental/v17/.wsuo
+/.vs/CarRental/FileContentIndex/49b24555-e9d7-468b-ba3a-60a49497c909.vsidx
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
