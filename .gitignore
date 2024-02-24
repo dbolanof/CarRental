@@ -396,4 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-/Api/bin/Debug/net6.0/Api.dll
