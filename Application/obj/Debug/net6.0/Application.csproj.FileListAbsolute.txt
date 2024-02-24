@@ -1,0 +1,13 @@
+C:\Develop\CarRental\Application\bin\Debug\net6.0\Application.deps.json
+C:\Develop\CarRental\Application\bin\Debug\net6.0\Application.dll
+C:\Develop\CarRental\Application\bin\Debug\net6.0\Application.pdb
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.sourcelink.json
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.dll
+C:\Develop\CarRental\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Develop\CarRental\Application\obj\Debug\net6.0\Application.pdb
+C:\Develop\CarRental\Application\obj\Debug\net6.0\ref\Application.dll
