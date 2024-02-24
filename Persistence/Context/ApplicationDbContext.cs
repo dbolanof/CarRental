@@ -1,10 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Persistence.Context
 {
@@ -14,6 +10,10 @@ namespace Persistence.Context
         {
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
+        public virtual DbSet<Customer> Customer { get; set; } = null!;
+        public virtual DbSet<Place> Place { get; set; } = null!;
+        public virtual DbSet<StatusVehicle> StatusVehicle { get; set; } = null!;
+        public virtual DbSet<Vehicle> Vehicle { get; set; } = null!;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

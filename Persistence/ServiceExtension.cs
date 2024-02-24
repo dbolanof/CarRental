@@ -14,12 +14,13 @@ namespace Persistence
     /// </summary>
     public static class ServiceExtension
     {
-        public static void AddPersistenceInfraestructure(this IServiceCollection service, IConfiguration configuration)
+        public static IServiceCollection AddPersistenceInfraestructure(this IServiceCollection service, IConfiguration configuration)
         {
             //Register Conection database
-            service.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString(DbDefaultConection.ConectionDb.SqlServerConection.ToString())));
+            service.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetSection("ConnectionStrings:SqlServerConection").Value));
             //Register generic repository
             service.AddTransient(typeof(IRepositoryAsync<>), typeof(GenericRepository<>));
+            return service;
         }
     }
 }
