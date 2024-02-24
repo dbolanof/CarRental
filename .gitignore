@@ -9,3 +9,5 @@
 /.vs/VSWorkspaceState.json
 /.vs/Car.Rental.Test/FileContentIndex/671cc34f-c326-4f28-8116-1288803a7093.vsidx
 /Api/obj/project.nuget.cache
+/.vs/Car.Rental.Test
+/Api/bin/Debug/net6.0/Api.exe
