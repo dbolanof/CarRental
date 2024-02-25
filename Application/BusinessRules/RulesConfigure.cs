@@ -9,6 +9,10 @@ namespace Application.BusinessRules
         {
             return IQuery;
         }
+        protected IQueryable<T> WheresTransversal(IQueryable<T> IQuery)
+        {
+            return IQuery;
+        }
 
     }
 }

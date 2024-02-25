@@ -7,11 +7,10 @@ using Application.Specifications;
 using Application.Wrappers;
 using AutoMapper;
 using Domain.Entities;
-using System.Resources;
 
 namespace Application.BusinessRules
 {
-    public class VehicleRules: RulesConfigure<Vehicle>
+    public class VehicleRules : RulesConfigure<Vehicle>
     {
         private readonly IRepositoryAsync<Vehicle> _repositoryAsync;
         private readonly IMapper _mapper;
@@ -39,7 +38,7 @@ namespace Application.BusinessRules
         }
         public async Task<PageResponse<List<VehicleDto>>> GetAllAsync(GetAllVehicleQuery request)
         {
-            List<Vehicle> vehicle = await _repositoryAsync.ListAsync(new PagedVehicleSpecification(request.PageSize, request.PageNumber, request.Name, request.Description));
+            List<Vehicle> vehicle = await _repositoryAsync.ListAsync(new PagedVehicleSpecification(request.PageSize, request.PageNumber, request.Status, request.PlaceDelivery,request.PlacePickUp) { });
             List<VehicleDto> VehicleDto = _mapper.Map<List<VehicleDto>>(vehicle);
             return new PageResponse<List<VehicleDto>>(VehicleDto, request.PageNumber, request.PageSize);
         }

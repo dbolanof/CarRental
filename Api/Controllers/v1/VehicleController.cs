@@ -23,21 +23,22 @@ namespace Api.Controllers.v1
             return Ok(await Mediator.Send(new GetVehicleByIdQuery() { IdVehicle = id }));
         }
 
-        [HttpGet]
+        [HttpGet("VehiclesAvailableByPlace")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(VehicleDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(VehicleDto))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(VehicleDto))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(VehicleDto))]
         [ProducesResponseType(StatusCodes.Status403Forbidden, Type = typeof(VehicleDto))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        public async Task<IActionResult> Get([FromQuery] GetAllVehicleQuery filter)
+        public async Task<IActionResult> Get([FromQuery] GetVehicleParameters filter)
         {
             return Ok(await Mediator.Send(new GetAllVehicleQuery()
             {
                 PageNumber = filter.PageNumber,
                 PageSize = filter.PageSize,
-                Name = filter.Name,
-                Description = filter.Description
+                Status = filter.Status,
+                PlaceDelivery = filter.PlaceDelivery,
+                PlacePickUp = filter.PlacePickUp
             }));
         }
         [HttpPost]

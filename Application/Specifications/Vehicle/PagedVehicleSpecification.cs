@@ -4,17 +4,22 @@ namespace Application.Specifications
 {
     public class PagedVehicleSpecification : Specification<Vehicle>
     {
-        public PagedVehicleSpecification(int PageSize, int PageNumber, string PlateNumber, string Brand)
+        public PagedVehicleSpecification(int PageSize, int PageNumber,  short status, int PlaceDelivery,int PlacePickUp)
         {
             Query.Skip((PageNumber - 1) * PageSize).Take(PageSize);
-            if (!string.IsNullOrEmpty(PlateNumber))
+            if (status > 0)
             {
-                Query.Search(s => s.PlateNumbe, "%" + PlateNumber + "%");
+                Query.Where(s => s.IdStatusVehicle.Equals(status));
             }
-            if (!string.IsNullOrEmpty(Brand))
+            if (PlacePickUp>0)
             {
-                Query.Search(s => s.Brand, "%" + Brand + "%");
-            }        
+                Query.Where(s => s.IdPlacePickUp.Equals(PlacePickUp));
+            }
+            if (PlaceDelivery > 0)
+            {
+                Query.Where(s => s.IdPlaceDelivery.Equals(PlaceDelivery));
+            }
+
         }
     }
 }
