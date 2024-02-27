@@ -1,0 +1,16 @@
+C:\Develop\TestCarRental\CarRental\Application\bin\Debug\net6.0\Application.deps.json
+C:\Develop\TestCarRental\CarRental\Application\bin\Debug\net6.0\Application.dll
+C:\Develop\TestCarRental\CarRental\Application\bin\Debug\net6.0\Application.pdb
+C:\Develop\TestCarRental\CarRental\Application\bin\Debug\net6.0\Domain.dll
+C:\Develop\TestCarRental\CarRental\Application\bin\Debug\net6.0\Domain.pdb
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.sourcelink.json
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.dll
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\Application.pdb
+C:\Develop\TestCarRental\CarRental\Application\obj\Debug\net6.0\ref\Application.dll

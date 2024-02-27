@@ -1,4 +1,7 @@
-﻿namespace Application.DTOs.Vehicle
+﻿using Application.DTOs.Place;
+using Application.DTOs.StatusVehicle;
+
+namespace Application.DTOs.Vehicle
 {
     public record VehicleDto
     {
@@ -10,5 +13,8 @@
         public short IdStatusVehicle { get; set; }
         public int IdPlacePickUp { get; set; }
         public int IdPlaceDelivery { get; set; }
+        public StatusVehicleDto StatusVehicleNavigation { get; set; }
+        public PlaceDto IdPlacePickUpNavigation { get; set; }
+        public PlaceDto IdPlaceDeliveryNavigation { get; set; }
     }
 }

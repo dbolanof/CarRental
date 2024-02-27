@@ -11,6 +11,9 @@ namespace Domain.Entities
         [StringLength(5)]
         public string Code { get; set; } = null!;
         [StringLength(20)]
-        public string Description { get; set; } = null!;      
+        public string Description { get; set; } = null!;
+
+        [InverseProperty("IdStatusVehicleNavigation")]
+        public virtual ICollection<Vehicle> Vehicle { get; set; }
     }
 }

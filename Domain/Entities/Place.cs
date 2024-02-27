@@ -14,6 +14,10 @@ namespace Domain.Entities
         public string? Latitude { get; set; }
         [StringLength(20)]
         public string? Longitude { get; set; }
-     
+
+        [InverseProperty(nameof(Vehicle.IdPlaceDeliveryNavigation))]
+        public virtual ICollection<Vehicle> VehicleIdPlaceDeliveryNavigation { get; set; }
+        [InverseProperty(nameof(Vehicle.IdPlacePickUpNavigation))]
+        public virtual ICollection<Vehicle> VehicleIdPlacePickUpNavigation { get; set; }
     }
 }
